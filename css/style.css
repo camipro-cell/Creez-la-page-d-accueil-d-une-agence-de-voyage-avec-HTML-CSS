@@ -1,0 +1,58 @@
+/* CSS GENERAL */
+
+
+* {
+    max-width: 1400px;
+    font-family: 'Raleway';
+    box-sizing : border-box;
+    margin: 0;
+    padding: 0;
+    color:#000000;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* CSS HEADER */
+
+.en_tete {
+            display: flex; /* mise en place du conteneur .en_tete pour gérer certaines propriétés du header */
+            flex-direction: row; 
+            justify-content: space-between; /* espace entre le logo et les liens #offers et #activity */
+            margin: 44px 77px 0px 55px;
+        }
+
+
+.logo { 
+        width: 61.10px;
+        height: 19px;
+    }
+
+.en_tete a {  
+        
+            font-weight: 400; 
+            font-size: 16px;
+            line-height: 19px;
+
+       }
+
+.en_tete ._offers { 
+                    margin-right: 67px; /* marge externe à droite du lien #offers de 67px */
+ 
+                }
+
+                
+              
+.en_tete div { 
+                    padding-top: 4px; /* ce padding additionné au margin-top de .en_tete (soit 4px+44px), 
+                                      place les liens contenus dans la div à 48px du haut de la page */
+        
+            }              
+
+
+.en_tete div a:hover {  
+                        border-top: #0065FC solid 2px;
+                        color: #0065FC;
+                        padding-top: 46px;/* la marge interne entre le border-top et les liens #offers et #activity sera de 46px ,
+                                            pour que le border-top au dessus des liens soit bien tout en haut (lors du survol de la souris) */
+                        font-weight: 500; /* la graisse des liens passe à 500 au survol de la souris */
+                    }
