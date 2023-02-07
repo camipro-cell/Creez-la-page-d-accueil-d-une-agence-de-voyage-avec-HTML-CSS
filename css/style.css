@@ -65,6 +65,7 @@
                 }
 
 
+
 /* CSS HEADER */
 
 .en_tete {
@@ -110,5 +111,17 @@
                         font-weight: 500; /* la graisse des liens passe à 500 au survol de la souris */
                     }
                     
-    
+   /* CSS SECTION 1 */
+               
+                
+.marge_titre_principal { 
+        
+                        margin: 63px 0px 0px 55px; /* les marges externes s'appliqueront au premier h1 */
 
+
+                    }
+
+.marge_premier_paragraphe {
+                            margin: 8px 0px 0px 55px;
+
+                        }
