@@ -2,6 +2,7 @@
 
 
 * {
+    
     max-width: 1400px;
     font-family: 'Raleway';
     box-sizing : border-box;
@@ -11,6 +12,58 @@
     text-decoration: none;
     font-style: normal;
 }
+
+.taille_22 { 
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 26px; 
+        }
+
+.taille_16 {  
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+        }
+
+.taille_18 { 
+    
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+        }
+
+.taille_17 {
+
+              font-weight: 700;
+              font-size: 17px;
+              line-height: 20px;
+        }
+
+.taille_16_h3 {
+
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+        }
+
+.taille_14   {
+
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+
+        }
+
+.icon_color {
+
+                color: #0065FC;
+        }
+
+.icon_color_grey {
+                   color: #F2F2F2;
+            
+                }
+
 
 /* CSS HEADER */
 
@@ -56,3 +109,6 @@
                                             pour que le border-top au dessus des liens soit bien tout en haut (lors du survol de la souris) */
                         font-weight: 500; /* la graisse des liens passe à 500 au survol de la souris */
                     }
+                    
+    
+
