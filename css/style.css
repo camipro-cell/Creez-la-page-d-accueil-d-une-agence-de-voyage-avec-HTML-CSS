@@ -191,7 +191,7 @@
 .flex_filtres {
                 display: flex;
                 flex-direction: row;
-                margin: 46px 0px 0px 62px;
+                margin: 45px 0px 0px 62px;
 
          }
 
@@ -266,3 +266,29 @@
               margin-right: 36px;
         }
 
+/* CSS INFO */
+
+.flex_info { 
+                display: flex;
+                flex-direction: row;
+                margin: 40px 0px 0px 59px;
+
+}
+
+.info_icon .icon_color {
+                        
+                        font-size: 10px;
+                        padding: 6px 9px; /* mise en place des marges internes autour de l'icône dans le cercle */
+        
+             }
+
+.info_icon {   /*création du cercle qui entoure l'icône "fa-solid fa-info" */
+        
+                border: 1px solid #D9D9D9;
+                border-radius: 25px;
+                width: 24px;
+                height: 24px;
+                margin-right: 11px;
+                margin-top: -3px; /* le cercle contenant l'icône "fa-solid fa-info" sera placé à 37px en dessous des .flex_border_filtres */
+        
+      }
