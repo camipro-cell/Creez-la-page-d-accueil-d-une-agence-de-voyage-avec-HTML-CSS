@@ -200,19 +200,11 @@
                         flex-direction: row;
                         border: 2px solid #D9D9D9;
                         border-radius: 25px;
-                        margin-top: -14px;/* la marge externe du haut au dessus du border top des .flex_border_filtres est maintenant de 32px,
-                                        (46px-14px=32px) pour correspondre à la maquette */
-                        margin-right: 36px; /* une marge externe de 36px entre chaque .border_filtres est mise en place */
-
-
+                        margin-top: -14px; /* la marge externe du haut au dessus du border top des .flex_border_filtres est maintenant de 32px,
+                                           (46px-14px=32px) pour correspondre à la maquette */
+                        
                 }
 
-.flex_border_filtres:hover {
-
-                                background-color: #DEEBFF;
-                                margin-bottom: -2px; /* 2px sont retirés de la marge externe du bas des .flex_border_filtres, 
-                                                pour qu'ainsi 2px soit rajouté en bas lors du survol d'un .flex_border_filtres */
-                        }
 
 
 .marge_filtres_categories {    
@@ -232,12 +224,45 @@
 .icon_filtres {         
                         font-size: 22px;
                         margin: 12px 0px 12px 18px;  /* la marge externe est appliquée autour de l'icône 
-                                        à l'intérieur du .flex_border_filtres */
+                                                        à l'intérieur du .flex_border_filtres */
+           }
 
+.margin_icon_person {
+
+                        margin-left: 22px; /* la marge externe à gauche de l'icône "fa-solid fa-person" est augmenté à 22px 
+                                           pour correspondre au visuel de la maquette */
+                
                 }
+
+.flex_border_filtres:hover {
+
+                                background-color: #DEEBFF;
+                                margin-bottom: -2px; /* 2px sont retirés de la marge externe du bas des .flex_border_filtres, 
+                                                        pour qu'ainsi 2px soit rajouté en bas lors du survol d'un .flex_border_filtres */
+                }
+
 
 .flex_filtres .marge_filtre {      
                                 margin-right: 32px;/*la marge externe se fait entre le string "Filtres" et le border-radius 
                                                         situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
                 
                       }
+
+                      /* mise en place des marges entre les .flex_border_filtres */
+.margin_billet {
+             
+                 margin-right: 43px; 
+
+                }
+
+.margin_person {
+                 
+                 
+                margin-right: 40px;
+        }
+
+.margin_heart {
+
+              margin-right: 36px;
+        }
+
