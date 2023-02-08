@@ -64,6 +64,15 @@
             
                 }
 
+.proprietes_communes_bouton { /* propriétés s'appliquant aux deux boutons du formulaire 
+                                (celui qui sera visible en version desktop et tablette, et celui qui sera visible en version mobile) */ 
+
+                            border: 1px solid #0065FC;
+                            background: #0065FC;
+                            border-radius: 0px 15px 15px 0px;
+                            
+                        }
+
 
 
 /* CSS HEADER */
@@ -125,3 +134,62 @@
                             margin: 8px 0px 0px 55px;
 
                         }
+
+/* FORMULAIRE CSS */
+
+.formulaire     { 
+                        display: flex; /* l'ensemble du contenu .formulaire est aligné horizontalement */
+                        flex-direction: row;
+                        margin: 20px 0px 0px 55px;
+                        height: 49px;
+    
+     
+}
+.label_position, .champ_formulaire {
+
+                                        border: 1px solid #F2F2F2;
+                                }
+
+.label_position {   
+                    
+                    background: #F2F2F2;;
+                    border-radius: 15px 0px 0px 15px;
+    
+            }
+
+.label_position .icon_size {
+                                    width: 50px; /* la largeur du label sera de 50px */
+                                    font-size: 18px;
+                                    padding: 16px 18px 15px; /* les marges internes pour le positionnement de l'icône dans le label sont définis */
+    
+                        }
+
+
+
+.champ_formulaire { 
+                    width: 236px;
+                    padding: 14px 71px 14px 16px; /* les marges interne pour le positionnement du string "Marseille, France" sont définis */
+                    background-color: #FFFFFF;
+                    border-right: none; /*les bordures à droite et à gauche sont supprimées pour que le .champ_formulaire 
+                                        puisse correspondre au visuel de ma maquette */
+                    border-left: none;
+   
+             }
+  
+
+.bouton_rechercher {   
+                        width: 132px;
+                        padding: 14px 16px;
+                        color: #FFFFFF;
+                        border-bottom: none; /* les bordures en haut et en bas sont supprimées pour que le .bouton_rechercher
+                                                puisse correspondre au visuel de la maquette */
+                        border-top: none;
+                }
+
+
+.bouton_mobile {
+
+                    display: none; /* ce bouton de recherche ne sera visible qu'en version mobile */
+
+            }
+
