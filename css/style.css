@@ -90,13 +90,6 @@
         height: 19px;
     }
 
-.en_tete a {  
-        
-            font-weight: 400; 
-            font-size: 16px;
-            line-height: 19px;
-
-       }
 
 .en_tete ._offers { 
                     margin-right: 67px; /* marge externe à droite du lien #offers de 67px */
