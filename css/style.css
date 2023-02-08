@@ -167,7 +167,7 @@
 
 
 .champ_formulaire { 
-                    width: 236px;
+                    width: 234px;
                     padding: 14px 71px 14px 16px; /* les marges interne pour le positionnement du string "Marseille, France" sont définis */
                     background-color: #FFFFFF;
                     border-right: none; /*les bordures à droite et à gauche sont supprimées pour que le .champ_formulaire 
