@@ -186,3 +186,58 @@
 
             }
 
+/* FILTRES CSS */
+
+.flex_filtres {
+                display: flex;
+                flex-direction: row;
+                margin: 46px 0px 0px 62px;
+
+         }
+
+.flex_border_filtres {
+                        display: flex;
+                        flex-direction: row;
+                        border: 2px solid #D9D9D9;
+                        border-radius: 25px;
+                        margin-top: -14px;/* la marge externe du haut au dessus du border top des .flex_border_filtres est maintenant de 32px,
+                                        (46px-14px=32px) pour correspondre à la maquette */
+                        margin-right: 36px; /* une marge externe de 36px entre chaque .border_filtres est mise en place */
+
+
+                }
+
+.flex_border_filtres:hover {
+
+                                background-color: #DEEBFF;
+                                margin-bottom: -2px; /* 2px sont retirés de la marge externe du bas des .flex_border_filtres, 
+                                                pour qu'ainsi 2px soit rajouté en bas lors du survol d'un .flex_border_filtres */
+                        }
+
+
+.marge_filtres_categories {    
+                        
+                                margin: 12px 18px 12px 10px; /* la marge externe est appliquée autour des catégories string 
+                                                        à l'intérieur du .flex_border_filtres */
+
+                        }
+
+.marge_filtre_familial {
+
+                        margin: 12px 18px 12px 14px;
+                
+                 }
+
+
+.icon_filtres {         
+                        font-size: 22px;
+                        margin: 12px 0px 12px 18px;  /* la marge externe est appliquée autour de l'icône 
+                                        à l'intérieur du .flex_border_filtres */
+
+                }
+
+.flex_filtres .marge_filtre {      
+                                margin-right: 32px;/*la marge externe se fait entre le string "Filtres" et le border-radius 
+                                                        situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
+                
+                      }
