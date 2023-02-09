@@ -1,178 +1,177 @@
 /* CSS GENERAL */
 
-
-* {
-    
-    max-width: 1400px;
-    font-family: 'Raleway';
-    box-sizing : border-box;
-    margin: 0;
-    padding: 0;
-    color:#000000;
-    text-decoration: none;
-    font-style: normal;
+* {     
+        font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+        box-sizing : border-box;
+        margin: 0;
+        padding: 0;
+        color:#000000;
+        text-decoration: none;
+        font-style: normal;
+}
+body {  
+        
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 50px;
+        
 }
 
-.taille_22 { 
-                font-weight: 700;
-                font-size: 22px;
-                line-height: 26px; 
-        }
-
-.taille_16 {  
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 19px;
-        }
-
-.taille_18 { 
-    
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 21px;
-        }
-
-.taille_17 {
-
-              font-weight: 700;
-              font-size: 17px;
-              line-height: 20px;
-        }
-
-.taille_16_h3 {
-
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 19px;
-        }
-
-.taille_14   {
-
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 16px;
-
-        }
-
-.icon_color {
-
-                color: #0065FC;
-        }
-
-.icon_color_grey {
-                   color: #F2F2F2;
-            
-                }
-
-.proprietes_communes_bouton { /* propriétés s'appliquant aux deux boutons du formulaire 
-                                (celui qui sera visible en version desktop et tablette, et celui qui sera visible en version mobile) */ 
-
-                            border: 1px solid #0065FC;
-                            background: #0065FC;
-                            border-radius: 0px 15px 15px 0px;
-                            
+.typography-style-with-22 { 
+                                font-weight: 700;
+                                font-size: 1.375em;
+                                line-height: 26px; 
                         }
 
+.typography-style-with-16 {  
+                                font-weight: 400;
+                                font-size: 1em;
+                                line-height: 19px;
+                        }
 
+.typography-style-with-18 { 
+    
+                                font-weight: 700;
+                                font-size: 1.125em;
+                                line-height: 21px;
+                        }
+
+.typography-style-with-17 {
+
+                                font-weight: 700;
+                                font-size: 1.0625em;
+              
+                        }
+
+.typography-style-h3-with-16 {
+
+                                font-weight: 700;
+                                font-size: 1em;
+                                line-height: 19px;
+                        }
+
+.typography-style-with-14   {
+
+                                font-weight: 400;
+                                font-size: 0.875em;
+                                line-height: 16px;
+
+                        }
+
+.icon-color-blue {
+
+                        color: #0065FC;
+                }
+
+.icon-star-color-grey {
+                        color: #F2F2F2;
+            
+                   }
+
+
+p span {
+         font-weight: bold;
+      }
 
 /* CSS HEADER */
 
-.en_tete {
-            display: flex; /* mise en place du conteneur .en_tete pour gérer certaines propriétés du header */
-            flex-direction: row; 
-            justify-content: space-between; /* espace entre le logo et les liens #offers et #activity */
-            margin: 44px 77px 0px 55px;
+header {
+	  display: flex; 
+	  flex-direction: row;
+	  justify-content: space-between; /* espace entre le logo et les liens #offers et #activity */
+          
+     
         }
 
-
-.logo { 
-        width: 61.10px;
-        height: 19px;
-    }
-
-
-.en_tete ._offers { 
-                    margin-right: 67px; /* marge externe à droite du lien #offers de 67px */
+nav a {
+	 padding: 50px 30px 0;
+	 display: inline-block; /* les liens sont maintenanat inline-block, ce qui permet au padding-top de s'appliquer */
+	 border-top: transparent solid 2px;
+   }
  
-                }
-
-                
-              
-.en_tete div { 
-                    padding-top: 4px; /* ce padding additionné au margin-top de .en_tete (soit 4px+44px), 
-                                      place les liens contenus dans la div à 48px du haut de la page */
+.logo { 
         
-            }              
+        margin: 45px 0 0 5px;
+        width: 61px;
+        height: 19px;
+}
 
-
-.en_tete div a:hover {  
-                        border-top: #0065FC solid 2px;
-                        color: #0065FC;
-                        padding-top: 46px;/* la marge interne entre le border-top et les liens #offers et #activity sera de 46px ,
-                                            pour que le border-top au dessus des liens soit bien tout en haut (lors du survol de la souris) */
-                        font-weight: 500; /* la graisse des liens passe à 500 au survol de la souris */
-                    }
+nav a:hover {  
+                border-top: #0065FC solid 2px;
+                color: #0065FC;
+                font-weight: 500; /* la graisse des liens passe à 500 au survol de la souris */
+        }
                     
    /* CSS SECTION 1 */
                
                 
-.marge_titre_principal { 
+.position-first-h1 { 
         
-                        margin: 63px 0px 0px 55px; /* les marges externes s'appliqueront au premier h1 */
+                        margin: 60px 0 0 5px; /* les marges externes s'appliqueront au premier h1 */
 
 
                     }
 
-.marge_premier_paragraphe {
-                            margin: 8px 0px 0px 55px;
+.position-first-p {
+                            margin: 10px 0 0 5px;
 
                         }
 
 /* FORMULAIRE CSS */
 
-.formulaire     { 
-                        display: flex; /* l'ensemble du contenu .formulaire est aligné horizontalement */
+.formulary     { 
+                        display: flex; /* l'ensemble du contenu .formulary est aligné horizontalement */
                         flex-direction: row;
-                        margin: 20px 0px 0px 55px;
-                        height: 49px;
+                        padding: 20px 0 0 5px;
+                        min-height: 49px;
     
      
-}
-.label_position, .champ_formulaire {
+           }
+
+.label-properties, .textbox-form {
 
                                         border: 1px solid #F2F2F2;
                                 }
 
-.label_position {   
-                    
-                    background: #F2F2F2;;
-                    border-radius: 15px 0px 0px 15px;
-    
-            }
-
-.label_position .icon_size {
-                                    width: 50px; /* la largeur du label sera de 50px */
-                                    font-size: 18px;
-                                    padding: 16px 18px 15px; /* les marges internes pour le positionnement de l'icône dans le label sont définis */
-    
-                        }
+.label-properties {   
+                     min-width: 50px; /* la largeur du label sera de 50px */
+                     background: #F2F2F2;;
+                     border-radius: 15px 0 0 15px;
+                     font-size: 18px; /* la taille de l'icône "fa-solid fa-location-dot" à l'intérieur du label est fixé à 18px */
+                     padding: 16px 18px 15px; /* les marges internes pour le positionnement de l'icône dans le label sont définis */
+            
+                }
 
 
-
-.champ_formulaire { 
-                    width: 234px;
-                    padding: 14px 71px 14px 16px; /* les marges interne pour le positionnement du string "Marseille, France" sont définis */
+                                    
+.textbox-form { 
+                    min-width: 240px;
+                    padding: 14px; /* les marges interne pour le positionnement du string "Marseille, France" sont définis */
                     background-color: #FFFFFF;
                     border-right: none; /*les bordures à droite et à gauche sont supprimées pour que le .champ_formulaire 
                                         puisse correspondre au visuel de ma maquette */
                     border-left: none;
+                    
    
              }
+
+.button-properties {     /* propriétés s'appliquant aux deux boutons du formulaire 
+                          (celui qui sera visible en version desktop et tablette, et celui qui sera visible en version mobile) */ 
+
+                        border: 1px solid #0065FC;
+                        background: #0065FC;
+                        border-radius: 0px 15px 15px 0px;
+            
+        }
   
 
-.bouton_rechercher {   
-                        width: 132px;
+.button-search {        
+                        
+                        min-width: 132px;
                         padding: 14px 16px;
+                        font-size: 18px;
+                        font-weight: 700;
                         color: #FFFFFF;
                         border-bottom: none; /* les bordures en haut et en bas sont supprimées pour que le .bouton_rechercher
                                                 puisse correspondre au visuel de la maquette */
@@ -180,115 +179,99 @@
                 }
 
 
-.bouton_mobile {
+button .button-mobile {
 
-                    display: none; /* ce bouton de recherche ne sera visible qu'en version mobile */
+                       display: none; /* ce bouton de recherche ne sera visible qu'en version mobile */
 
-            }
+                 }
 
 /* FILTRES CSS */
 
-.flex_filtres {
+.flex-filters {
                 display: flex;
                 flex-direction: row;
-                margin: 45px 0px 0px 62px;
+                padding: 45px 0px 0px 12px;
 
-         }
+          }
 
-.flex_border_filtres {
+.flex-border-filters {
                         display: flex;
                         flex-direction: row;
                         border: 2px solid #D9D9D9;
                         border-radius: 25px;
-                        margin-top: -14px; /* la marge externe du haut au dessus du border top des .flex_border_filtres est maintenant de 32px,
-                                           (46px-14px=32px) pour correspondre à la maquette */
+                        margin-top: -15px; /* la marge externe du haut au dessus du border top des .flex_border_filtres est maintenant de 30px,
+                                            (45px-15px=30px) pour correspondre au visuel de la maquette */
+                        margin-left: 40px; /* la marge entre chaque .flex-border-filters sera de 40px */
                         
                 }
 
+.icons-in-filters {         
+                        font-size: 22px;
+                        padding: 12px 0 12px 18px;  /* les marges internes sont appliquées autour de l'icône 
+                                                        à l'intérieur du .flex-border-filters */
+             }
 
 
-.marge_filtres_categories {    
+
+.filter-category-space {    
                         
-                                margin: 12px 18px 12px 10px; /* la marge externe est appliquée autour des catégories string 
-                                                        à l'intérieur du .flex_border_filtres */
+                         padding: 12px 18px 12px 10px; /* les marges internes sont appliquées autour des catégories string 
+                                                        à l'intérieur des .flex-border-filters */
 
                         }
 
-.marge_filtre_familial {
+.filter-category-family-space {
 
-                        margin: 12px 18px 12px 14px;
+                        padding-left: 14px; /* la marge interne à gauche du string "Familial" est augmenté à 14px 
+                                             pour correspondre au visuel de la maquette */
                 
                  }
 
 
-.icon_filtres {         
-                        font-size: 22px;
-                        margin: 12px 0px 12px 18px;  /* la marge externe est appliquée autour de l'icône 
-                                                        à l'intérieur du .flex_border_filtres */
-           }
+.icon-person-in-filter {
 
-.margin_icon_person {
-
-                        margin-left: 22px; /* la marge externe à gauche de l'icône "fa-solid fa-person" est augmenté à 22px 
+                        padding-left: 22px; /* la marge interne à gauche de l'icône "fa-solid fa-person" est augmenté à 22px 
                                            pour correspondre au visuel de la maquette */
                 
                 }
 
-.flex_border_filtres:hover {
+.flex-filters .filtersstring-space {      
+                                        margin-right: -10px;/*la marge externe se fait entre le string "Filtres" et le border-radius 
+                                                             situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
 
+                                }
+
+.flex-border-filters:hover {
+                                cursor: pointer;
                                 background-color: #DEEBFF;
-                                margin-bottom: -2px; /* 2px sont retirés de la marge externe du bas des .flex_border_filtres, 
-                                                        pour qu'ainsi 2px soit rajouté en bas lors du survol d'un .flex_border_filtres */
-                }
+                        
+                        }               
 
 
-.flex_filtres .marge_filtre {      
-                                margin-right: 32px;/*la marge externe se fait entre le string "Filtres" et le border-radius 
-                                                        situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
-                
-                      }
-
-                      /* mise en place des marges entre les .flex_border_filtres */
-.margin_billet {
-             
-                 margin-right: 43px; 
-
-                }
-
-.margin_person {
-                 
-                 
-                margin-right: 40px;
-        }
-
-.margin_heart {
-
-              margin-right: 36px;
-        }
+                     
 
 /* CSS INFO */
 
-.flex_info { 
+.flex-info { 
                 display: flex;
                 flex-direction: row;
-                margin: 40px 0px 0px 59px;
+                padding: 40px 0px 0px 10px;
 
-}
+        }
 
-.info_icon .icon_color {
-                        
-                        font-size: 10px;
-                        padding: 6px 9px; /* mise en place des marges internes autour de l'icône dans le cercle */
         
-             }
-
-.info_icon {   /*création du cercle qui entoure l'icône "fa-solid fa-info" */
-        
-                border: 1px solid #D9D9D9;
+                       
+.circle-info {   
+                /*création du cercle qui entoure l'icône "fa-solid fa-info" */
+                border: 1px solid #D9D9D9; 
                 border-radius: 25px;
-                width: 24px;
-                height: 24px;
-                margin-right: 11px;
-                margin-top: -3px; /* le cercle contenant l'icône "fa-solid fa-info" sera placé à 37px en dessous des .flex_border_filtres */
-        
-      }
+                min-width: 24px;
+                min-height: 24px;
+
+                margin-right: 10px; /* une marge externe entre l'icône "fa-solid fa-info" et le paragraphe est fixé à 10px 
+                                       pour correspondre au visuel de la maquette */
+                margin-top: -5px; /* le cercle contenant l'icône "fa-solid fa-info" sera placé à 35px (40px-5px) en dessous des .flex_border_filtres */
+                font-size: 10px;   /* la taille de l'icône "fa-solid fa-info" est fixé à 10px */
+                padding: 6px 9px; /* mise en place des marges internes autour de l'icône "fa-solid fa-info" dans le cercle */
+                
+        }
