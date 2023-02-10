@@ -135,10 +135,10 @@ nav a:hover {
                                 }
 
 .label-properties {   
-                     min-width: 50px; /* la largeur du label sera de 50px */
+                     
                      background: #F2F2F2;;
                      border-radius: 15px 0 0 15px;
-                     font-size: 18px; /* la taille de l'icône "fa-solid fa-location-dot" à l'intérieur du label est fixé à 18px */
+                     font-size: 1.125em; /* la taille de l'icône "fa-solid fa-location-dot" à l'intérieur du label est fixé à 18px */
                      padding: 16px 18px 15px; /* les marges internes pour le positionnement de l'icône dans le label sont définis */
             
                 }
@@ -168,7 +168,7 @@ nav a:hover {
 
 .button-search {        
                         
-                        min-width: 132px;
+                        
                         padding: 14px 16px;
                         font-size: 18px;
                         font-weight: 700;
@@ -206,7 +206,7 @@ button .button-mobile {
                 }
 
 .icons-in-filters {         
-                        font-size: 22px;
+                        font-size: 1.375em;
                         padding: 12px 0 12px 18px;  /* les marges internes sont appliquées autour de l'icône 
                                                         à l'intérieur du .flex-border-filters */
              }
@@ -265,13 +265,21 @@ button .button-mobile {
                 /*création du cercle qui entoure l'icône "fa-solid fa-info" */
                 border: 1px solid #D9D9D9; 
                 border-radius: 25px;
-                min-width: 24px;
-                min-height: 24px;
-
+                width: 24px;
+                height: 24px;
+                
                 margin-right: 10px; /* une marge externe entre l'icône "fa-solid fa-info" et le paragraphe est fixé à 10px 
                                        pour correspondre au visuel de la maquette */
                 margin-top: -5px; /* le cercle contenant l'icône "fa-solid fa-info" sera placé à 35px (40px-5px) en dessous des .flex_border_filtres */
-                font-size: 10px;   /* la taille de l'icône "fa-solid fa-info" est fixé à 10px */
-                padding: 6px 9px; /* mise en place des marges internes autour de l'icône "fa-solid fa-info" dans le cercle */
+                
+                font-size: 0.625em;   /* la taille de l'icône "fa-solid fa-info" est fixé à 10px */
+                padding: 6px 9px;   /* mise en place des marges internes autour de l'icône "fa-solid fa-info" dans le cercle */
                 
         }
+
+
+
+
+
+
+
