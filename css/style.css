@@ -9,14 +9,18 @@
         text-decoration: none;
         font-style: normal;
 }
+
 body {  
+                
         
-	max-width: 1400px;
+        max-width: 1400px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 50px;
         
 }
+
+        
 
 .typography-style-with-22 { 
                                 font-weight: 700;
@@ -276,6 +280,157 @@ button .button-mobile {
                 padding: 6px 9px;   /* mise en place des marges internes autour de l'icône "fa-solid fa-info" dans le cercle */
                 
         }
+
+        /* CSS Section offers popular */
+
+/* CSS offers popular general */
+
+.offer-popular-section {       /* les deux parties de la section .offer-popular-section sont placées à côté pour correspondre à la maquette */
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                padding: 40px 0 60px 0;
+                       
+                   }
+
+.offers-popular-properties {    /* la hauteur et le fond de .offers et .popular sont définis */
+                                background-color: #F2F2F2;
+                                min-height: 625px;
+                                border-radius: 20px;
+                                
+                }
+        
+        
+.offers {
+       
+                width: 65%;
+                padding: 40px;
+               
+       }
+
+.popular {   
+             width: 31%;
+             padding: 35px;
+        }
+
+/* mise en place des propriétés générales de .card */
+.card { 
+          box-shadow: 0 4px 8px 0 #D9D9D9;
+          border-radius: 20px;
+          background-color: #FFFFFF;
+          
+        
+     }  
+
+.card img {
+            border: 5px solid #FFFFFF;
+            object-fit: cover;
+           
+            
+        
+}
+
+.card h3, p+i { padding-left: 15px; }
+
+.card p { padding: 5px 0 5px 15px; }
+
+
+.card i { font-size: 0.8em; }
+
+.card:hover {   
+                
+                box-shadow: 0 8px 16px 0 #D9D9D9;
+                
+          
+        }
+
+.offer-popular-section .card:hover img { 
+                                                padding: 1px;
+                                }
+
+/* CSS offers details */
+
+.first-line-offers-card {
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: space-between;
+                          padding: 20px 0 30px 0;
+                       }
+
+
+.second-line-offers-card {
+                           display: flex;
+                           flex-direction: row;
+                           justify-content: space-between;
+                           padding-bottom: 40px;
+                        }
+
+.offers .card { 
+               width: 31%;
+               min-height: 200px; 
+         }
+
+.offers img {
+                width: 100%;
+                height: 120px;
+                border-radius: 20px 20px 0 0;
+           }
+
+
+/* CSS popular details */
+
+.title-popular-with-icon { 
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+       
+                        }
+
+.title-popular-with-icon i {
+                                font-size: 1.125em;
+                                margin-top: 5px;
+                        }
+
+.flex-popular-card {
+                        display: flex;
+                        flex-direction: row;
+                        
+                        
+                }
+
+.popular .card {   
+                  width: 100%;
+                  min-height: 145px;
+                  margin-top: 30px;
+                }
+
+
+.popular img {
+                width: 41%;
+                height: 145px;
+                border-right: none;
+                border-radius: 20px 0px 0px 20px;
+
+        }
+
+.card .space-string-in-card-popular { 
+                                      padding-top: 15px;
+                                      padding-right: 15px;
+                                      
+
+                                }
+
+
+
+.flex-popular-card i {
+                                        padding-top: 45px;
+                                        
+                                }
+
+.flex-popular-card .position-star-in-last-card-popular {
+                                                                        padding-top: 60px;
+                                                        }              
+
 
 
 
