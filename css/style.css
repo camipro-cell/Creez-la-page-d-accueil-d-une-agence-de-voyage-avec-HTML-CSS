@@ -651,7 +651,7 @@ footer p {
 
         .popular .card { margin-top: 0;}
        
-        .popular .card p {  font-size: 13px;
+        .popular .card p {  font-size: 0.813em;
                             font-weight: 400;
                             line-height: 15px;
                             padding-left: 12px; 
@@ -693,7 +693,7 @@ footer p {
 
 
         /* footer */
-        
+
         footer { padding: 45px 170px 50px 70px;}
         
 }
