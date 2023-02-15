@@ -601,5 +601,103 @@ footer p {
                              
                         }
         
-  
+/*** Responsive on tablet ***/                   
+                        
+     
+
+@media  (max-width: 992px) { 
+
+        body { padding: 0 70px; }
+           
+        /* filters */
+        
+        .flex-border-filters { margin-left: 20px; }
+
+       /* offers and popular section */
+
+        .offer-popular-section {      
+                                        flex-direction: column;  /* .popular se replace en colonne en dessous de .offers*/
+                                        justify-content: space-between;
+                                        padding: 40px 0 60px 0;
+                                }     
+        .flex-popular-responsive-tablet {       
+                                                display: flex; /* les .card dans .popular ne sont plus sur une colonne mais sur une rangée */
+                                                flex-direction: row;
+                                                justify-content: space-between;
+                        }
+        
+        .offer-popular-section { padding-bottom: 70px;}
+        
+        .offers { width: auto;
+                  padding: 30px;
+        }
+
+        .popular {   
+                        width: 100%;
+                        height: 270px;
+                        padding: 30px;
+                        margin-top: 50px;
+                }
+
+        /* popular details */
+
+       .popular .card {   
+                                width: 250px;
+                                height: 144px;
+                                        }
+
+        .popular-card-img { width: 42%; }
+                
+
+        .popular .card { margin-top: 0;}
+       
+        .popular .card p {  font-size: 13px;
+                            font-weight: 400;
+                            line-height: 15px;
+                            padding-left: 12px; 
+                        } 
+
+        .popular .card h3, p+i {  padding-left: 12px; } 
+        
+        .card .space-string-in-card-popular { padding-right: 10px; }
+       
+        .flex-popular-card .position-star-in-second-popular-card-responsive-tablet { padding-top: 30px;}
+    
+        .flex-popular-card .position-star-in-last-popular-card { padding-top: 45px; }
+        
+        .title-popular-with-icon { padding-bottom: 25px;}
+        
+        /* activity section */
+
+        .flex-activity-section .card {
+                                        width: 21.5%;
+                                        height: 267px;
+                                }
+        .card .activity-card-img {
+                                        
+                                        height: 211px;
+                                }
+
+        .flex-activity-section { padding: 30px 0 70px 0;}
+
+        .card .activity-card-h3{ padding-left: 20px; 
+                                                    
+        
+                                        }
+
+        .h3-in-third-and-last-activity-card-responsive-tablet { padding-top: 5px;
+          
+                        }
+
+        .h3-in-last-activity-card-responsive-tablet { padding-right: 40px;}
+
+
+        /* footer */
+        
+        footer { padding: 45px 170px 50px 70px;}
+        
+}
+
+
+
   
