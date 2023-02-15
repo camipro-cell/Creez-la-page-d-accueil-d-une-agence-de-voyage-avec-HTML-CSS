@@ -293,24 +293,24 @@ button .button-mobile {
                        
                    }
 
-.offers-popular-properties {    /* la hauteur et le fond de .offers et .popular sont définis */
+.offers, .popular {    /* la hauteur et le fond de .offers et .popular sont définis */
                                 background-color: #F2F2F2;
-                                min-height: 625px;
+                                height: 625px;
                                 border-radius: 20px;
-                                
+                                padding: 35px;
                 }
         
         
 .offers {
        
-                width: 65%;
-                padding: 40px;
+                width: 65.5%;
+               
                
        }
 
 .popular {   
-             width: 31%;
-             padding: 35px;
+             width: 31.5%;
+             
         }
 
 /* mise en place des propriétés générales de .card */
@@ -325,14 +325,14 @@ button .button-mobile {
 .card img {
             border: 5px solid #FFFFFF;
             object-fit: cover;
-           
+            flex-shrink: 0;
             
         
 }
 
 .card h3, p+i { padding-left: 15px; }
 
-.card p { padding: 5px 0 5px 15px; }
+.card p { padding: 5px 0 3px 15px; }
 
 
 .card i { font-size: 0.8em; }
@@ -354,7 +354,7 @@ button .button-mobile {
                           display: flex;
                           flex-direction: row;
                           justify-content: space-between;
-                          padding: 20px 0 30px 0;
+                          padding: 23px 0 30px 0;
                        }
 
 
@@ -366,13 +366,13 @@ button .button-mobile {
                         }
 
 .offers .card { 
-               width: 31%;
-               min-height: 200px; 
+               width: 30.5%;
+               min-height: 199px; 
          }
 
-.offers img {
+.offers-card-img {
                 width: 100%;
-                height: 120px;
+                height: 124px;
                 border-radius: 20px 20px 0 0;
            }
 
@@ -383,7 +383,7 @@ button .button-mobile {
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-between;
-       
+                                
                         }
 
 .title-popular-with-icon i {
@@ -400,14 +400,15 @@ button .button-mobile {
 
 .popular .card {   
                   width: 100%;
-                  min-height: 145px;
+                  height: 144px;
                   margin-top: 30px;
+                  
                 }
 
 
-.popular img {
-                width: 41%;
-                height: 145px;
+.popular-card-img {
+                width: 40.5%;
+                height: 144px;
                 border-right: none;
                 border-radius: 20px 0px 0px 20px;
 
@@ -415,7 +416,7 @@ button .button-mobile {
 
 .card .space-string-in-card-popular { 
                                       padding-top: 15px;
-                                      padding-right: 15px;
+                                      padding-right: 20px;
                                       
 
                                 }
@@ -427,8 +428,8 @@ button .button-mobile {
                                         
                                 }
 
-.flex-popular-card .position-star-in-last-card-popular {
-                                                                        padding-top: 60px;
+.flex-popular-card .position-star-in-last-popular-card {
+                                                                        padding-top: 65px;
                                                         }              
 
 
@@ -446,20 +447,20 @@ button .button-mobile {
 
 
 .flex-activity-section .card {
-                                width: 23%;
-                                height: 440px;
+                                width: 22.5%;
+                                height: 445px;
                         }
 
-.flex-activity-section img {
+.card .activity-card-img {
                                 width: 100%;
-                                height: 385px;
+                                height: 390px;
                                 border-radius: 20px 20px 0 0;
                                 border: none;
               
                         }
 
-.flex-activity-section h3 {
-                                padding: 15px 0 0 20px;
+.activity-card-h3 {
+                                padding-top: 15px;
         
                         }
 
@@ -471,7 +472,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         background-color: #F2F2F2;
-        padding: 45px 300px 50px 70px;
+        padding: 45px 320px 50px 70px;
         }
         
 footer li { 
@@ -483,5 +484,123 @@ footer p {
                 padding-bottom: 10px;
         } 
 
+/*** Responsive on desktop ***/
+
+        /* Responsive filters */
+
+@media screen  and (min-width: 993px) and (max-width: 1124px) { 
+                   
+                        .flex-border-filters { margin-left: 30px; }
+                }
+
+        /* Responsive popular section */
+
+@media screen and (min-width: 1262px) and (max-width: 1298px) { 
+                        
+                        .popular { width: 32.5%;}
+                }
 
 
+@media screen and (min-width: 1168px) and (max-width: 1261px) { 
+                         
+                        .popular { width: 33.5%;}
+                        .offers { width: 65%;}
+                 }     
+                        
+@media screen and (min-width: 1152px) and (max-width: 1167px) { 
+        
+                        .popular { width: 35%;}
+                        .offers { width: 64%;}
+                }                           
+                
+@media screen and (min-width: 1046px) and (max-width: 1151px) {
+
+                        .popular { width: 35.5%;}
+                        .offers { width: 63.5%;}
+                        
+                }   
+                
+        
+@media screen and (min-width: 993px) and (max-width: 1045px) {
+        
+                        .popular { width: 36.5%;}
+                        .offers { width: 62.5%;}
+                        
+                }  
+         
+                                                
+@media screen and (min-width: 993px) and (max-width: 1244px) { 
+        
+                        .popular .card h3 {  padding-left: 5px; } 
+                        .popular .card p {  padding-left: 5px; } 
+                        .popular .card p+i { padding-left: 5px;}
+                }   
+                
+@media screen and (min-width: 1093px) and (max-width: 1244px) {             
+                
+                        .card .space-string-in-card-popular { padding-right: 15px;}
+                }
+
+@media screen and (min-width: 993px) and (max-width: 1092px) {
+        
+                        .card .space-string-in-card-popular { padding-right: 5px;}
+                }
+                                  
+
+        /* Responsive offers section */
+
+@media screen and (min-width: 993px) and (max-width: 1171px) { 
+        
+                        .offers .card h3 {  padding-left: 5px; } 
+                        .offers .card p {  padding-left: 5px; } 
+                        .offers .card p+i { padding-left: 5px}
+                                  
+                }
+
+@media screen and (min-width: 1060px) and (max-width: 1171px) {
+
+                        .offers .card { width: 31%; }
+                        body { padding: 0 35px;}
+                        }
+
+
+@media screen and (min-width: 993px) and (max-width: 1059px) {
+                
+                        .offers .card { width: 32%; }
+                        body { padding: 0 30px;}         
+                        }
+                        
+@media screen and (min-width: 1046px) and (max-width: 1171px) {
+                        
+                        .offers { padding-left: 25px;
+                                padding-right: 25px;}
+                        }
+
+@media screen and (min-width: 993px) and (max-width: 1045px) {
+                
+        
+                        .offers { padding-left: 15px;
+                                padding-right: 15px;}  
+                                           
+                }
+
+
+
+        /* Responsive activity section */
+
+@media screen and (min-width: 993px) and (max-width: 1132px) {
+        
+                        .card .activity-card-h3 { padding-top: 10px; }
+                                
+                        }
+
+       /* Responsive footer */
+  
+@media screen and (min-width: 993px) and (max-width: 1058px) {
+                
+                        footer { padding-right: 280px; }
+                             
+                        }
+        
+  
+  
