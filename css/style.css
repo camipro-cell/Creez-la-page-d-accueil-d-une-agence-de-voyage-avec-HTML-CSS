@@ -549,13 +549,6 @@ footer p {
 
         /* Responsive offers section */
 
-@media screen and (min-width: 993px) and (max-width: 1171px) { 
-        
-                        .offers .card h3 {  padding-left: 5px; } 
-                        .offers .card p {  padding-left: 5px; } 
-                        .offers .card p+i { padding-left: 5px}
-                                  
-                }
 
 @media screen and (min-width: 1060px) and (max-width: 1171px) {
 
@@ -563,7 +556,13 @@ footer p {
                         body { padding: 0 35px;}
                         }
 
-
+@media screen and (min-width: 993px) and (max-width: 1130px) { 
+        
+                        .offers .card h3 {  padding-left: 5px; } 
+                        .offers .card p {  padding-left: 5px; } 
+                        .offers .card p+i { padding-left: 5px;}
+                                                  
+                                }
 @media screen and (min-width: 993px) and (max-width: 1059px) {
                 
                         .offers .card { width: 32%; }
