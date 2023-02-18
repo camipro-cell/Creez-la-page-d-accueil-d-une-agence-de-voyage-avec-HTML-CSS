@@ -17,8 +17,6 @@ body {
      padding: 0 50px;
 }
 
-        
-
 .typography-style-with-22 { 
     font-weight: 700;
     font-size: 1.375em;
@@ -120,12 +118,12 @@ nav a:hover {
     background: #F2F2F2;;
     border-radius: 15px 0 0 15px;
     font-size: 1.125em; /* la taille de l'icône "fa-solid fa-location-dot" à l'intérieur du label est fixé à 18px */
-    padding: 16px 18px 15px; /* les marges internes pour le positionnement de l'icône dans le label sont définis */
+    padding: 14px 18px 14px; /* les marges internes pour le positionnement de l'icône dans le label sont définis */
 }
 
 .textbox-form { 
     min-width: 240px;
-    padding: 14px; /* les marges interne pour le positionnement du string "Marseille, France" sont définis */
+    padding: 11px 11px 11px 14px; /* les marges interne pour le positionnement du string "Marseille, France" sont définis */
     background-color: #FFFFFF;
     border-right: none; /*les bordures à droite et à gauche sont supprimées pour que le .champ_formulaire 
                                         puisse correspondre au visuel de ma maquette */
@@ -153,10 +151,7 @@ button:hover {
     cursor: pointer;
 }
 
-
-
 button .button-mobile {
-
     display: none; /* ce bouton de recherche ne sera visible qu'en version mobile */
 
 }
@@ -205,7 +200,7 @@ button .button-mobile {
                                            pour correspondre au visuel de la maquette */
 }
 
-.flex-filters .filtersstring-space {      
+.flex-filters .filters-string-space {      
     margin-right: -10px;/*la marge externe se fait entre le string "Filtres" et le border-radius 
                                                              situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
 }
@@ -338,6 +333,12 @@ button .button-mobile {
     flex-direction: row;
 }
 
+.flex-with-string-and-icon-stars { /* ce conteneur contient le string et les stars des card de .popular */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
 .popular .card {   
     width: 100%;
     height: 144px;
@@ -350,13 +351,6 @@ button .button-mobile {
     height: 144px;
     border-right: none;
     border-radius: 20px 0px 0px 20px;
-}
-
-.flex-with-string-and-icon-stars { /* ce conteneur contient le string at les stars des card de .popular */
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-
 }
 
 .card .space-string-in-card-popular { 
@@ -417,7 +411,7 @@ footer p {
 
 /*** Responsive on desktop ***/
 
-@media (max-width: 1200px) { 
+@media screen and (max-width: 1200px) { 
         
  body { 
      padding: 0 35px;
@@ -444,7 +438,7 @@ footer p {
  }
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
    
  body { 
      padding: 0 30px;
@@ -476,7 +470,7 @@ footer p {
 
 /*** Responsive on tablet ***/                   
                         
-@media (max-width: 991px) { 
+@media screen and (max-width: 991px) { 
 
  body { 
      padding: 0 40px;
@@ -584,6 +578,3 @@ footer p {
         
 }
 
-
-
-  
