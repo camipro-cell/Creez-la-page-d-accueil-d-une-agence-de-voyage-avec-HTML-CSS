@@ -414,98 +414,72 @@ footer p {
 @media screen and (max-width: 1200px) { 
         
  body { 
-     padding: 0 35px;
+     padding: 0 30px;
 }                
  .flex-border-filters { 
      margin-left: 30px; 
  }
  .offers { 
-     width: 63.5%; 
+     width: 65%; 
+ }
+.popular { 
+     width: 32%; 
+}
+ .offers, .popular {
      padding-left: 25px;
      padding-right: 25px;
  }
  .offers .card { 
-     width: 31%; 
- }
- .popular { 
-     width: 35.5%; 
- }
- .popular .card h3, .popular .card p, .card .first-star-position {  
-     padding-left: 5px; 
- } 
- .card .space-string-in-card-popular { 
-     padding-right: 15px;
- }
+    width: 32%; 
 }
-
-@media screen and (max-width: 1100px) {
-   
- body { 
-     padding: 0 30px;
- } 
- .offers { 
-     width: 62.5%;
-     padding-left: 15px;
-     padding-right: 15px;
- }
- .offers .card { 
-     width: 32%; 
- }
  .offers .card h3, .offers .card p, .offers .card p+i {  
-     padding-left: 5px; 
- } 
- .popular { 
-     width: 36.5%;
- }
- .card .space-string-in-card-popular { 
-     padding-right: 5px;
- }
- .card .activity-card-h3 { 
-     padding-top: 10px; 
+    padding-left: 5px; 
+} 
+.card .activity-card-h3 { 
+    padding-top: 10px; 
 }
- footer { 
-     padding-right: 280px; 
- }
+footer { 
+    padding-right: 300px; 
+}
 }
 
 /*** Responsive on tablet ***/                   
                         
 @media screen and (max-width: 991px) { 
-
+     
  body { 
      padding: 0 40px;
  }
+ .formulary, .flex-filters, .flex-info {
+     padding-left: 0;
+ }
+ .position-first-h1, .position-first-p, .logo {
+     margin-left: 0;
+ }
         /* filters */
- 
  .flex-border-filters { 
      margin-left: 25px;
-} 
+ } 
  .flex-filters {
      flex-wrap: wrap;  /* le filtre .space-with-animal-filter-responsive-tablet passera à la ligne lorsque la largeur de l'écran sera trop petite */
  }
  .flex-filters > div { 
      margin-bottom: 20px;
  }
- .flex-filters .space-with-animal-filter-responsive-tablet { 
-     margin-bottom: -10px;
+        /* Info */
+ .flex-info {
+     padding-top: 20px;
  }
- 
         /* offers and popular section */
-
  .offer-popular-section {      
      flex-direction: column;  /* .popular se replace en colonne en dessous de .offers*/
      justify-content: space-between;
-     padding: 40px 0 60px 0;
+     padding: 40px 0 70px 0;
  }    
- .offer-popular-section { 
-     padding-bottom: 70px;
- }
  .offers, .popular { 
-     padding: 40px;
+     padding: 40px 40px 45px;
  }
-
         /* offers details */
-
  .offers { 
      width: auto;
  }
@@ -515,7 +489,6 @@ footer p {
  .offers .card h3, .offers .card p, .offers .card p+i {  
      padding-left: 10px; 
  } 
-        
         /* popular details */
  .flex-popular-responsive-tablet {       
      display: flex; /* les .card dans .popular ne sont plus sur une colonne mais sur une rangée */
@@ -524,32 +497,40 @@ footer p {
  }
  .popular {   
      width: 100%;
-     height: 270px;
+     height: 275px;
      margin-top: 50px;
+ }
+ .title-popular-with-icon {
+     padding-bottom: 20px;
  }
  .popular .card {   
      width: 30.5%;
      height: 144px;
-     margin-top: 20px;
+     margin-top: 0;
  }
  .popular-card-img { 
      width: 42%; 
  }
- .popular .card p {  
-     font-size: 0.813em;
-     font-weight: 400;
-     line-height: 15px;
-     padding-bottom: 0;
- } 
  .card .space-string-in-card-popular { 
-     padding-right: 10px;
      padding-top: 10px;
+     padding-right: 0;
  }
- .space-string-in-card-popular i, .first-star-position { 
-     padding-bottom: 5px;
+ .space-string-in-card-popular i { 
+    padding-bottom: 5px;
  }
+ .popular .card p {  
+    font-size: 0.813em;
+    font-weight: 400;
+    line-height: 15px;
+    padding-bottom: 0;
+ } 
+ .popular .card h3 {
+    padding-right: 15px;
+ }
+ .popular .card h3, .popular .card p, .popular .card .first-star-position {  
+    padding-left: 5px; 
+ } 
          /* activity section */
-
  .flex-activity-section { 
      padding: 30px 0 70px 0;
  }
@@ -561,20 +542,24 @@ footer p {
      height: 211px;
  }
  .card .h3-in-first-and-second-activity-card-responsive-tablet { 
-     padding-top: 13px; padding-left: 20px; 
+     padding-top: 13px; 
+     padding-left: 20px; 
  }
- .card .h3-in-third-and-last-activity-card-responsive-tablet { 
-     padding-top: 5px;  padding-left: 15px;
+ .card .h3-in-third-activity-card-responsive-tablet { 
+     padding-top: 5px;  
+     padding-left: 17px;
  }
  .card .h3-in-last-activity-card-responsive-tablet { 
-     padding-right: 30px;
+     width: 80%;
+     padding-top: 5px;
+     padding-left: 15px;
  }
-
         /* footer */
-
  footer { 
-     padding: 45px 140px 50px 50px;
+     padding: 45px 150px 50px 50px;
  }
-        
+ .space-middle-in-footer-in-responsive-tablet {
+    margin-right: 15px;
+ }
 }
 
