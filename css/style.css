@@ -88,7 +88,7 @@ nav a:hover {
     border-top: #0065FC solid 2px;
     color: #0065FC;
     font-weight: 500; /* la graisse des liens passe à 500 au survol de la souris */
-        }
+}
                     
 /* CSS SECTION 1 */
                
@@ -415,7 +415,7 @@ footer p {
         
  body { 
      padding: 0 30px;
-}                
+ }                
  .flex-border-filters { 
      margin-left: 30px; 
  }
@@ -424,23 +424,23 @@ footer p {
  }
 .popular { 
      width: 32%; 
-}
+ }
  .offers, .popular {
      padding-left: 25px;
      padding-right: 25px;
  }
  .offers .card { 
     width: 32%; 
-}
+ }
  .offers .card h3, .offers .card p, .offers .card p+i {  
     padding-left: 5px; 
-} 
-.card .activity-card-h3 { 
+ } 
+ .card .activity-card-h3 { 
     padding-top: 10px; 
-}
-footer { 
+ }
+ footer { 
     padding-right: 300px; 
-}
+ }
 }
 
 /*** Responsive on tablet ***/                   
@@ -519,7 +519,8 @@ footer {
     padding-bottom: 5px;
  }
  .popular .card p {  
-    font-size: 0.813em;
+    font-size: 0.813em; /* le <p> des .card de .popular passe à 11px de font-size */
+    line-height: 16px;
     font-weight: 400;
     line-height: 15px;
     padding-bottom: 0;
@@ -559,7 +560,220 @@ footer {
      padding: 45px 150px 50px 50px;
  }
  .space-middle-in-footer-in-responsive-tablet {
-    margin-right: 15px;
+     margin-right: 15px;
  }
 }
 
+/*** Responsive on mobile ***/
+@media screen and (max-width: 767px) {
+
+ body {
+     padding: 0;
+ }
+        /* Header */
+ header {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 25px;
+ }
+ .logo { 
+     margin-top:0;
+ }
+ nav { 
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+ }
+ nav .link-offer-active-in-responsive-mobile[data-active=true] {
+    border-bottom-color: #0065FC;
+    color: #0065FC;
+    font-weight: 500;
+}
+ nav a { 
+     padding-bottom: 25px;
+     text-align: center;
+     width:50%;
+     border-top: none;
+     border-bottom: 3px solid #F2F2F2;
+ }
+ nav a:hover { 
+     border-bottom: #0065FC solid 3px;
+     border-top: none;
+ }
+        /* Section 1 */
+    
+ .space-first-section-in-responsive-mobile {
+     padding: 0 20px 0 20px;
+ }
+ .position-first-h1 { 
+     margin-top: 30px; /* les marges externes s'appliqueront au premier h1 */
+ }
+ .position-first-p {
+     margin-top: 15px;
+ }
+        /* Formulary */
+    
+ .formulary {
+     padding-top: 35px;
+     width: auto;
+ }
+ .textbox-form {
+     flex: 1;
+     min-width: 220px;
+ }
+ .button-search {
+     display: none;
+ }
+ button .button-mobile {
+     display: inline-block;
+     padding: 16px;
+     font-size: 17px;
+     color: #FFFFFF;
+ }
+        /* Filters */  
+
+ .filter-string-space {
+     width: 100%;
+ }
+ .flex-filters {
+     padding-top: 35px;
+ }
+ .flex-filters > div {
+     margin-bottom: 0;
+     margin-top: 15px;
+ }
+ .flex-border-filters { 
+     margin-left: 0;
+     width: 47.7%;
+ }
+ .flex-border-filters p {
+     font-size: 0.688em; /* la font-size passe à 11px pour les strings des .flex-border-filters */
+ }
+ .icons-in-filters {
+     font-size: 1.313em; /* la font-size passe à 21px pour les icônes des .flex-border-filters */
+     padding: 14px 0 14px 13px;
+ }
+ .filter-category-space {
+     padding: 18px 0 18px 5px; 
+ }
+ .filter-category-family-space {
+     padding-left: 8px;
+ }
+ .space-filter-animal-in-responsive-mobile, .space-filter-person-in-responsive-mobile {
+     margin-left: 15px;
+ }
+        /* Info */
+    
+ .flex-info {
+     padding-top: 43px;
+ }
+ .circle-info {
+    font-size: 0.750em;
+    padding: 5px 9px;
+    margin-top: -3px;
+ }
+        /* Offers and Popular section */
+       
+ .offer-popular-section {  
+     display: flex;    
+     flex-direction: column-reverse;  /* .popular se replace en colonne en dessous de .offers */
+     padding-top: 25px;
+     padding-bottom: 105px;
+ }  
+ .popular, .offers {
+     border-radius: 0; /* les bords arrondis des .popular et .offers disparraissent */
+ } 
+ .popular .card, .offers .card {
+     width: 100%;
+     margin-top: 10px;
+ }
+ .offers .card h3, .offers .card p, .offers .card p+i, .popular .card h3, .popular .card p, .popular .card .first-star-position {
+     padding-left: 15px;
+ }
+        /* Popular details */
+
+ .popular {
+     padding: 30px 20px 45px 20px;
+     height: 580px;
+     margin-top: 0;
+ }
+ .flex-popular-responsive-tablet {       
+     display: flex; /* les .card dans .popular ne sont plus sur une rangée mais sur une colonne */
+     flex-direction: column;
+ }
+ .title-popular-with-icon {
+     padding-bottom: 15px;
+ }
+ .card .space-string-in-card-popular {
+     padding-top: 15px; 
+ }
+ .space-string-in-card-popular i { 
+     padding-bottom: 10px;
+ }
+.popular .card h3 {
+     padding-right: 25px;
+ }
+.popular .card p {
+     font-weight: 400;
+     font-size: 0.875em; /* le <p> des .card de .popular repasse à 14px de font-size */
+     line-height: 16px;
+ }
+        /* Offers details */
+   
+ .offers {
+     padding: 25px 20px 0 20px;
+     background-color: #FFFFFF;
+     height: 1315px;
+ }
+ .offers .space-title-offer-in-responsive-mobile {
+    padding-bottom: 10px;
+ }
+ .first-line-offers-card, .second-line-offers-card { /* les deux rangées de .offers sont maintenant en colonnes */
+     display: flex;
+     flex-direction: column;
+     padding: 0;
+ }
+ .link-none-in-responsive-mobile {
+     display: none;
+ }
+        /* Activity section */
+    
+ .flex-activity-section {
+     display: flex; /* les .card de .flex-activity-section se mettent en colonne */
+     flex-direction: column;
+     padding: 0 20px 0 20px;
+ }
+ .flex-activity-section .card {
+     width: 100%;
+     height: 190px;
+     margin-bottom: 25px;
+ }
+ .card .activity-card-img {
+     height: 134px;
+ }
+ .space-title-activity-in-responsive-mobile {
+     padding-left: 20px;
+     width: 35%;
+ }
+ .card .h3-in-third-activity-card-responsive-tablet, .card .h3-in-last-activity-card-responsive-tablet {
+     padding-left: 20px; 
+     padding-top: 15px;
+ }
+ .card .h3-in-first-and-second-activity-card-responsive-tablet, .card .h3-in-third-and-last-activity-card-responsive-tablet {
+     padding-top: 15px; 
+ }
+        /* Footer */
+
+ footer {
+     display: flex;
+     flex-direction: column;
+     margin-top: 55px;
+     padding-left: 30px;
+     padding-top: 0;
+ }
+ footer p {
+     padding-top: 45px;
+ }
+}
+    
