@@ -714,10 +714,13 @@ footer p {
  .space-string-in-card-popular i { 
      padding-bottom: 10px;
  }
-.popular .card h3 {
+ .popular .card h3 {
      padding-right: 25px;
  }
-.popular .card p {
+ .popular .card .space-title-of-second-popular-card-responsive-mobile {
+    padding-right: 10px;
+ }
+ .popular .card p {
      font-weight: 400;
      font-size: 0.875em; /* le <p> des .card de .popular repasse à 14px de font-size */
      line-height: 16px;
