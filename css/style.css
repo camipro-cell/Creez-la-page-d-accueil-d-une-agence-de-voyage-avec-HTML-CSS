@@ -470,6 +470,9 @@ footer p {
  .flex-info {
      padding-top: 20px;
  }
+ .flex-border-filters:active {
+     background-color: #DEEBFF;
+ } 
         /* offers and popular section */
  .offer-popular-section {      
      flex-direction: column;  /* .popular se replace en colonne en dessous de .offers*/
@@ -670,7 +673,7 @@ footer p {
  }
  .circle-info {
     font-size: 0.750em;
-    padding: 5px 9px;
+    padding: 4px 9px 6px;
     margin-top: -3px;
  }
         /* Offers and Popular section */
