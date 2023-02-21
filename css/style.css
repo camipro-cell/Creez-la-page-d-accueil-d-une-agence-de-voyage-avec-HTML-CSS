@@ -200,8 +200,8 @@ button .button-mobile {
                                            pour correspondre au visuel de la maquette */
 }
 
-.flex-filters .filters-string-space {      
-    margin-right: -10px;/*la marge externe se fait entre le string "Filtres" et le border-radius 
+.flex-filters .filter-string-space {      
+    margin-right: -10px; /*la marge externe se fait entre le string "Filtres" et le border-radius 
                                                              situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
 }
 
