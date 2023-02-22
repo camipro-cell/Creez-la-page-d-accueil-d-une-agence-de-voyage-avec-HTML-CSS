@@ -11,10 +11,10 @@
 }
 
 body {  
-     max-width: 1400px;
-     margin-left: auto;
-     margin-right: auto;
-     padding: 0 50px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
 }
 
 .typography-style-with-22 { 
@@ -125,13 +125,11 @@ nav a:hover {
     min-width: 240px;
     padding: 11px 11px 11px 14px; /* les marges interne pour le positionnement du string "Marseille, France" sont définis */
     background-color: #FFFFFF;
-    border-right: none; /*les bordures à droite et à gauche sont supprimées pour que le .champ_formulaire 
-                                        puisse correspondre au visuel de ma maquette */
-    border-left: none;
+    border-right: none; /*les bordures à droite et à gauche sont supprimées pour que le .champ_formulaire puisse correspondre au visuel de ma maquette */
+    border-left: none;                                   
 }
 
-.button-properties {     /* propriétés s'appliquant aux deux boutons du formulaire 
-                          (celui qui sera visible en version desktop et tablette, et celui qui sera visible en version mobile) */ 
+.button-properties {     /* propriétés s'appliquant aux deux boutons du formulaire (celui qui sera visible en version desktop et tablette, et celui qui sera visible en version mobile) */ 
     border: 1px solid #0065FC;
     background: #0065FC;
     border-radius: 0px 15px 15px 0px;
@@ -142,8 +140,7 @@ nav a:hover {
     font-size: 18px;
     font-weight: 700;
     color: #FFFFFF;
-    border-bottom: none; /* les bordures en haut et en bas sont supprimées pour que le .bouton_rechercher
-                                                puisse correspondre au visuel de la maquette */
+    border-bottom: none; /* les bordures en haut et en bas sont supprimées pour que le .bouton_rechercher puisse correspondre au visuel de la maquette */
     border-top: none;
 }
 
@@ -153,7 +150,6 @@ button:hover {
 
 button .button-mobile {
     display: none; /* ce bouton de recherche ne sera visible qu'en version mobile */
-
 }
 
 /* FILTRES CSS */
@@ -169,47 +165,35 @@ button .button-mobile {
     flex-direction: row;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    margin-top: -15px; /* la marge externe du haut au dessus du border top des .flex_border_filtres est maintenant de 30px,
-                                            (45px-15px=30px) pour correspondre au visuel de la maquette */
+    margin-top: -15px; /* la marge externe du haut au dessus du border top des .flex_border_filtres est maintenant de 30px,(45px-15px=30px) pour correspondre au visuel de la maquette */
     margin-left: 40px; /* la marge entre chaque .flex-border-filters sera de 40px */
 }
 
-
-
 .icons-in-filters {         
     font-size: 1.375em;
-    padding: 12px 0 12px 18px;  /* les marges internes sont appliquées autour de l'icône 
-                                                        à l'intérieur du .flex-border-filters */
+    padding: 12px 0 12px 18px;  /* les marges internes sont appliquées autour de l'icône à l'intérieur du .flex-border-filters */
 }
 
-
-
 .filter-category-space {    
-    padding: 12px 18px 12px 10px; /* les marges internes sont appliquées autour des catégories string 
-                                      à l'intérieur des .flex-border-filters */
+    padding: 12px 18px 12px 10px; /* les marges internes sont appliquées autour des catégories string à l'intérieur des .flex-border-filters */
 }
 
 .filter-category-family-space {
-    padding-left: 14px; /* la marge interne à gauche du string "Familial" est augmenté à 14px 
-                                             pour correspondre au visuel de la maquette */
+    padding-left: 14px; /* la marge interne à gauche du string "Familial" est augmenté à 14px pour correspondre au visuel de la maquette */
 }
 
-
 .icon-person-in-filter {
-    padding-left: 22px; /* la marge interne à gauche de l'icône "fa-solid fa-person" est augmenté à 22px 
-                                           pour correspondre au visuel de la maquette */
+    padding-left: 22px; /* la marge interne à gauche de l'icône "fa-solid fa-person" est augmenté à 22px pour correspondre au visuel de la maquette */
 }
 
 .flex-filters .filter-string-space {      
-    margin-right: -10px; /*la marge externe se fait entre le string "Filtres" et le border-radius 
-                                                             situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
+    margin-right: -10px; /*la marge externe se fait entre le string "Filtres" et le border-radius situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
 }
 
 .flex-border-filters:hover {
     cursor: pointer;
     background-color: #DEEBFF;
 }               
-
 
 /* CSS INFO */
 
@@ -220,18 +204,14 @@ button .button-mobile {
 }
 
 .circle-info {   
-                /*création du cercle qui entoure l'icône "fa-solid fa-info" */
     border: 1px solid #D9D9D9; 
     border-radius: 25px;
-    width: 24px;
+    width: 24px;            /*création du cercle qui entoure l'icône "fa-solid fa-info" */
     height: 24px;
-    margin-right: 10px; /* une marge externe entre l'icône "fa-solid fa-info" et le paragraphe est fixé à 10px 
-                                       pour correspondre au visuel de la maquette */
+    margin-right: 10px; /* une marge externe entre l'icône "fa-solid fa-info" et le paragraphe est fixé à 10px pour correspondre au visuel de la maquette */
     margin-top: -5px; /* le cercle contenant l'icône "fa-solid fa-info" sera placé à 35px (40px-5px) en dessous des .flex_border_filtres */
-                
     font-size: 0.625em;   /* la taille de l'icône "fa-solid fa-info" est fixé à 10px */
     padding: 6px 9px;   /* mise en place des marges internes autour de l'icône "fa-solid fa-info" dans le cercle */
-                
 }
 
         /* CSS Section offers popular */
@@ -243,8 +223,7 @@ button .button-mobile {
     flex-direction: row;
     justify-content: space-between;
     padding: 40px 0 60px 0;
-                       
-                   }
+}
 
 .offers, .popular {   /* la hauteur et le fond de .offers et .popular sont définis */
     background-color: #F2F2F2;
@@ -261,7 +240,12 @@ button .button-mobile {
     width: 31.5%;
 }
 
+.no-space-beetween-stars {
+    white-space: nowrap;
+}
+
 /* mise en place des propriétés générales de .card */
+
 .card { 
     box-shadow: 0 4px 8px 0 #D9D9D9;
     border-radius: 20px;
@@ -275,7 +259,7 @@ button .button-mobile {
     flex-shrink: 0;
 }
 
-.card h3, p+i { 
+.card h3, .card .first-star-position { 
     padding-left: 15px; 
 }
 
@@ -286,7 +270,6 @@ button .button-mobile {
 .card i { 
     font-size: 0.8em; 
 }
-
 
 /* CSS offers details */
 
@@ -337,14 +320,13 @@ button .button-mobile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
- }
+}
 
 .popular .card {   
     width: 100%;
     height: 144px;
     margin-top: 30px;
-                  }
-
+}
 
 .popular-card-img {
     width: 40.5%;
@@ -356,12 +338,8 @@ button .button-mobile {
 .card .space-string-in-card-popular { 
     padding-top: 15px;
     padding-right: 20px;
-}
+}                              
 
-.space-string-in-card-popular .first-star-position { 
-    padding-left: 15px;
-}
-                                
 .space-string-in-card-popular i { 
     padding-bottom: 10px;
 }
@@ -397,7 +375,10 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     background-color: #F2F2F2;
-    padding: 45px 320px 50px 70px;
+    padding: 45px;
+}
+footer > div {
+    width: 31%;
 }
         
 footer li { 
@@ -414,32 +395,29 @@ footer p {
 @media screen and (max-width: 1200px) { 
         
  body { 
-     padding: 0 30px;
+    padding: 0 30px;
  }                
  .flex-border-filters { 
-     margin-left: 30px; 
+    margin-left: 30px; 
  }
  .offers { 
-     width: 65%; 
+    width: 65%; 
  }
-.popular { 
-     width: 32%; 
+ .popular { 
+    width: 32%; 
  }
  .offers, .popular {
-     padding-left: 25px;
-     padding-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
  }
  .offers .card { 
     width: 32%; 
  }
- .offers .card h3, .offers .card p, .offers .card p+i {  
+ .offers .card h3, .offers .card p, .offers .card .first-star-position {  
     padding-left: 5px; 
  } 
  .card .activity-card-h3 { 
     padding-top: 10px; 
- }
- footer { 
-    padding-right: 300px; 
  }
 }
 
@@ -448,75 +426,80 @@ footer p {
 @media screen and (max-width: 991px) { 
      
  body { 
-     padding: 0 40px;
+    padding: 0 40px;
  }
  .formulary, .flex-filters, .flex-info {
-     padding-left: 0;
+    padding-left: 0;
  }
  .position-first-h1, .position-first-p, .logo {
-     margin-left: 0;
+    margin-left: 0;
  }
         /* filters */
+ 
  .flex-border-filters { 
-     margin-left: 25px;
+    margin-left: 25px;
  } 
  .flex-filters {
-     flex-wrap: wrap;  /* le filtre .space-with-animal-filter-responsive-tablet passera à la ligne lorsque la largeur de l'écran sera trop petite */
+    flex-wrap: wrap;  /* le filtre .space-with-animal-filter-responsive-tablet passera à la ligne lorsque la largeur de l'écran sera trop petite */
  }
  .flex-filters > div { 
-     margin-bottom: 20px;
+    margin-bottom: 30px;
  }
         /* Info */
+ 
  .flex-info {
-     padding-top: 20px;
+    padding-top: 10px;
  }
  .flex-border-filters:active {
-     background-color: #DEEBFF;
+    background-color: #DEEBFF;
  } 
         /* offers and popular section */
+
  .offer-popular-section {      
-     flex-direction: column;  /* .popular se replace en colonne en dessous de .offers*/
-     justify-content: space-between;
-     padding: 40px 0 70px 0;
+    flex-direction: column;  /* .popular se replace en colonne en dessous de .offers*/
+    justify-content: space-between;
+    padding: 40px 0 70px 0;
  }    
  .offers, .popular { 
-     padding: 40px 40px 45px;
+    padding: 40px 40px 45px;
  }
         /* offers details */
+ 
  .offers { 
-     width: auto;
+    width: auto;
  }
  .offers .card { 
-     width: 30%;
+    width: 30%;
  }
- .offers .card h3, .offers .card p, .offers .card p+i {  
-     padding-left: 10px; 
+ .offers .card h3, .offers .card p, .offers .card .first-star-position {  
+    padding-left: 10px; 
  } 
         /* popular details */
+
  .flex-popular-responsive-tablet {       
-     display: flex; /* les .card dans .popular ne sont plus sur une colonne mais sur une rangée */
-     flex-direction: row;
-     justify-content: space-between;
+    display: flex; /* les .card dans .popular ne sont plus sur une colonne mais sur une rangée */
+    flex-direction: row;
+    justify-content: space-between;
  }
  .popular {   
-     width: 100%;
-     height: 275px;
-     margin-top: 50px;
+    width: 100%;
+    height: 275px;
+    margin-top: 50px;
  }
  .title-popular-with-icon {
-     padding-bottom: 20px;
+    padding-bottom: 20px;
  }
  .popular .card {   
-     width: 30.5%;
-     height: 144px;
-     margin-top: 0;
+    width: 30.5%;
+    height: 144px;
+    margin-top: 0;
  }
  .popular-card-img { 
-     width: 42%; 
+    width: 42%; 
  }
  .card .space-string-in-card-popular { 
-     padding-top: 10px;
-     padding-right: 0;
+    padding-top: 10px;
+    padding-right: 0;
  }
  .space-string-in-card-popular i { 
     padding-bottom: 5px;
@@ -535,58 +518,60 @@ footer p {
     padding-left: 5px; 
  } 
          /* activity section */
+
  .flex-activity-section { 
-     padding: 30px 0 70px 0;
+    padding: 30px 0 70px 0;
  }
  .flex-activity-section .card {
-     width: 21.5%;
-     height: 270px;
+    width: 21.5%;
+    height: 270px;
  }
  .card .activity-card-img {
-     height: 211px;
+    height: 211px;
  }
  .card .h3-in-first-and-second-activity-card-responsive-tablet { 
-     padding-top: 13px; 
-     padding-left: 20px; 
+    padding-top: 13px; 
+    padding-left: 20px; 
  }
  .card .h3-in-third-activity-card-responsive-tablet { 
-     padding-top: 5px;  
-     padding-left: 17px;
+    padding-top: 5px;  
+    padding-left: 17px;
  }
  .card .h3-in-last-activity-card-responsive-tablet { 
-     width: 80%;
-     padding-top: 5px;
-     padding-left: 15px;
+    width: 80%;
+    padding-top: 5px;
+    padding-left: 15px;
  }
-        /* footer */
- footer { 
-     padding: 45px 150px 50px 50px;
- }
- .space-middle-in-footer-in-responsive-tablet {
-     margin-right: 15px;
+
+        /* Footer */
+    
+ footer {
+    padding-right: 10px;
  }
 }
 
 /*** Responsive on mobile ***/
+
 @media screen and (max-width: 767px) {
 
  body {
-     padding: 0;
+    padding: 0;
  }
         /* Header */
+
  header {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
  }
  .logo { 
-     margin-top:0;
+    margin-top:0;
  }
  nav { 
-     display: flex;
-     flex-direction: row;
-     width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
  }
  nav .link-offer-active-in-responsive-mobile[data-active=true] {
     border-bottom-color: #0065FC;
@@ -594,82 +579,82 @@ footer p {
     font-weight: 500;
 }
  nav a { 
-     padding-bottom: 25px;
-     text-align: center;
-     width:50%;
-     border-top: none;
-     border-bottom: 3px solid #F2F2F2;
+    padding: 50px 10px 25px 10px;
+    text-align: center;
+    width: 50%;
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
  }
  nav a:hover { 
-     border-bottom: #0065FC solid 3px;
-     border-top: none;
+    border-bottom: #0065FC solid 3px;
+    border-top: none;
  }
         /* Section 1 */
     
  .space-first-section-in-responsive-mobile {
-     padding: 0 20px 0 20px;
+    padding: 0 20px 0 20px;
  }
  .position-first-h1 { 
-     margin-top: 30px; /* les marges externes s'appliqueront au premier h1 */
+    margin-top: 30px; /* les marges externes s'appliqueront au premier h1 */
  }
  .position-first-p {
-     margin-top: 15px;
+    margin-top: 15px;
  }
         /* Formulary */
     
  .formulary {
-     padding-top: 35px;
-     width: auto;
+    padding-top: 35px;
+    width: auto;
  }
  .textbox-form {
-     flex: 1;
-     min-width: 220px;
+    flex: 1;
+    min-width: 80px;
  }
  .button-search {
-     display: none;
+    display: none;
  }
  button .button-mobile {
-     display: inline-block;
-     padding: 16px;
-     font-size: 17px;
-     color: #FFFFFF;
+    display: inline-block;
+    padding: 16px;
+    font-size: 17px;
+    color: #FFFFFF;
  }
         /* Filters */  
 
  .filter-string-space {
-     width: 100%;
+    width: 100%;
  }
  .flex-filters {
-     padding-top: 35px;
+    padding-top: 35px;
  }
  .flex-filters > div {
-     margin-bottom: 0;
-     margin-top: 15px;
+    margin-bottom: 0;
+    margin-top: 15px;
  }
  .flex-border-filters { 
-     margin-left: 0;
-     width: 47.7%;
+    margin-left: 0;
+    min-width: 47.7%;
  }
  .flex-border-filters p {
-     font-size: 0.688em; /* la font-size passe à 11px pour les strings des .flex-border-filters */
+    font-size: 0.688em; /* la font-size passe à 11px pour les strings des .flex-border-filters */
  }
  .icons-in-filters {
-     font-size: 1.313em; /* la font-size passe à 21px pour les icônes des .flex-border-filters */
-     padding: 14px 0 14px 13px;
+    font-size: 1.313em; /* la font-size passe à 21px pour les icônes des .flex-border-filters */
+    padding: 14px 0 14px 13px;
  }
  .filter-category-space {
-     padding: 18px 0 18px 5px; 
+    padding: 18px 5px 18px 5px; 
  }
  .filter-category-family-space {
-     padding-left: 8px;
+    padding-left: 8px;
  }
- .space-filter-animal-in-responsive-mobile, .space-filter-person-in-responsive-mobile {
-     margin-left: 15px;
+ .space-filter-money-in-responsive-mobile, .space-filter-heart-in-responsive-mobile {
+    margin-right: 13px;
  }
         /* Info */
     
  .flex-info {
-     padding-top: 43px;
+    padding-top: 43px;
  }
  .circle-info {
     font-size: 0.750em;
@@ -679,107 +664,112 @@ footer p {
         /* Offers and Popular section */
        
  .offer-popular-section {  
-     display: flex;    
-     flex-direction: column-reverse;  /* .popular se replace en colonne en dessous de .offers */
-     padding-top: 25px;
-     padding-bottom: 105px;
+    display: flex;    
+    flex-direction: column-reverse;  /* .popular se replace en colonne en dessous de .offers */
+    padding-top: 25px;
+    padding-bottom: 105px;
  }  
  .popular, .offers {
-     border-radius: 0; /* les bords arrondis des .popular et .offers disparraissent */
+    border-radius: 0; /* les bords arrondis des .popular et .offers disparraissent */
  } 
  .popular .card, .offers .card {
-     width: 100%;
-     margin-top: 10px;
+    width: 100%;
+    margin-top: 10px;
  }
- .offers .card h3, .offers .card p, .offers .card p+i, .popular .card h3, .popular .card p, .popular .card .first-star-position {
-     padding-left: 15px;
+ .offers .card h3, .offers .card p, .offers .card .first-star-position, .popular .card h3, .popular .card p, .popular .card .first-star-position {
+    padding-left: 13px;
  }
         /* Popular details */
 
  .popular {
-     padding: 30px 20px 45px 20px;
-     height: 580px;
-     margin-top: 0;
+    padding: 30px 20px 45px 20px;
+    height: 580px;
+    margin-top: 0;
  }
  .flex-popular-responsive-tablet {       
-     display: flex; /* les .card dans .popular ne sont plus sur une rangée mais sur une colonne */
-     flex-direction: column;
+    display: flex; /* les .card dans .popular ne sont plus sur une rangée mais sur une colonne */
+    flex-direction: column;
+ }
+ .popular .card {
+    overflow: scroll;
  }
  .title-popular-with-icon {
-     padding-bottom: 15px;
+    padding-bottom: 15px;
  }
  .card .space-string-in-card-popular {
-     padding-top: 15px; 
+    padding-top: 13px; 
  }
  .space-string-in-card-popular i { 
-     padding-bottom: 10px;
+    padding-bottom: 10px;
  }
  .popular .card h3 {
-     padding-right: 25px;
+    padding-right: 25px;
  }
  .popular .card .space-title-of-second-popular-card-responsive-mobile {
     padding-right: 10px;
  }
  .popular .card p {
-     font-weight: 400;
-     font-size: 0.875em; /* le <p> des .card de .popular repasse à 14px de font-size */
-     line-height: 16px;
+    font-weight: 400;
+    font-size: 0.875em; /* le <p> des .card de .popular repasse à 14px de font-size */
+    line-height: 16px;
  }
         /* Offers details */
    
  .offers {
-     padding: 25px 20px 0 20px;
-     background-color: #FFFFFF;
-     height: 1315px;
+    padding: 25px 20px 0 20px;
+    background-color: #FFFFFF;
+    height: 1315px;
  }
  .offers .space-title-offer-in-responsive-mobile {
     padding-bottom: 10px;
  }
  .first-line-offers-card, .second-line-offers-card { /* les deux rangées de .offers sont maintenant en colonnes */
-     display: flex;
-     flex-direction: column;
-     padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
  }
  .link-none-in-responsive-mobile {
-     display: none;
+    display: none;
  }
         /* Activity section */
     
  .flex-activity-section {
-     display: flex; /* les .card de .flex-activity-section se mettent en colonne */
-     flex-direction: column;
-     padding: 0 20px 0 20px;
+    display: flex; /* les .card de .flex-activity-section se mettent en colonne */
+    flex-direction: column;
+    padding: 0 20px 0 20px;
  }
  .flex-activity-section .card {
-     width: 100%;
-     height: 190px;
-     margin-bottom: 25px;
+    width: 100%;
+    height: 190px;
+    margin-bottom: 25px;
  }
  .card .activity-card-img {
-     height: 134px;
+    height: 134px;
  }
  .space-title-activity-in-responsive-mobile {
-     padding-left: 20px;
-     width: 35%;
+    padding-left: 20px;
+    width: 50%;
  }
  .card .h3-in-third-activity-card-responsive-tablet, .card .h3-in-last-activity-card-responsive-tablet {
-     padding-left: 20px; 
-     padding-top: 15px;
+    padding-left: 20px; 
+    padding-top: 15px;
  }
  .card .h3-in-first-and-second-activity-card-responsive-tablet, .card .h3-in-third-and-last-activity-card-responsive-tablet {
-     padding-top: 15px; 
+    padding-top: 15px; 
  }
         /* Footer */
 
  footer {
-     display: flex;
-     flex-direction: column;
-     margin-top: 55px;
-     padding-left: 30px;
-     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    padding: 0 20px 50px 30px;
  }
  footer p {
-     padding-top: 45px;
+    padding-top: 45px;
+ }
+ footer > div {
+    width: 100%;
  }
 }
     
