@@ -1,4 +1,4 @@
-/* CSS GENERAL */
+/*** CSS GENERAL ***/
 
 * {     
     font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
@@ -67,14 +67,14 @@ p span {
 /* CSS HEADER */
 
 header {
-    display: flex; 
+    display: flex; /* the content of the header is aligned horizontally */
     flex-direction: row;
-    justify-content: space-between; /* espace entre le logo et les liens #offers et #activity */
+    justify-content: space-between; /* space between logo and links #offers and #activity */
 }
 
 nav a {
     padding: 50px 30px 0;
-    display: inline-block; /* les liens sont maintenanat inline-block, ce qui permet au padding-top de s'appliquer */
+    display: inline-block; /* links are now inline-block, padding-top can now apply */
     border-top: transparent solid 2px;
 }
  
@@ -87,24 +87,23 @@ nav a {
 nav a:hover {  
     border-top: #0065FC solid 2px;
     color: #0065FC;
-    font-weight: 500; /* la graisse des liens passe à 500 au survol de la souris */
+    font-weight: 500; /* font-weight for links is switch to 500 when the mouse passes on links */
 }
                     
 /* CSS SECTION 1 */
                
-                
 .position-first-h1 { 
-    margin: 60px 0 0 5px; /* les marges externes s'appliqueront au premier h1 */
+    margin: 60px 0 0 5px; 
 }
 
 .position-first-p {
     margin: 10px 0 0 5px;
 }
 
-/* FORMULAIRE CSS */
+/* CSS FORMULARY */
 
 .formulary     { 
-    display: flex; /* l'ensemble du contenu .formulary est aligné horizontalement */
+    display: flex; /* the content of the form is aligned horizontally */
     flex-direction: row;
     padding: 20px 0 0 5px;
     min-height: 49px;
@@ -117,22 +116,22 @@ nav a:hover {
 .label-properties {   
     background: #F2F2F2;;
     border-radius: 15px 0 0 15px;
-    font-size: 1.125em; /* la taille de l'icône "fa-solid fa-location-dot" à l'intérieur du label est fixé à 18px */
-    padding: 14px 18px 14px; /* les marges internes pour le positionnement de l'icône dans le label sont définis */
+    font-size: 1.125em; /* the size of the icon "fa-solid fa-location-dot" in label is fixed to 18px */
+    padding: 14px 18px 14px; /* the internals margins around the label icon are defined */
 }
 
 .textbox-form { 
     min-width: 240px;
-    padding: 11px 11px 11px 14px; /* les marges interne pour le positionnement du string "Marseille, France" sont définis */
+    padding: 11px 11px 11px 14px; /* the internals margins around the string "Marseille, France" are defined */
     background-color: #FFFFFF;
-    border-right: none; /*les bordures à droite et à gauche sont supprimées pour que le .champ_formulaire puisse correspondre au visuel de ma maquette */
+    border-right: none; /* right and left borders are removed so that .textbox-form shape matches with the visual of the model */
     border-left: none;                                   
 }
 
-.button-properties {     /* propriétés s'appliquant aux deux boutons du formulaire (celui qui sera visible en version desktop et tablette, et celui qui sera visible en version mobile) */ 
+.button-properties {     /* these properties apply to both buttons of the form (the one visible in desktop and tablet version, and the one visible in mobile version) */ 
     border: 1px solid #0065FC;
     background: #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0 15px 15px 0;
 }
   
 .button-search {        
@@ -140,7 +139,7 @@ nav a:hover {
     font-size: 18px;
     font-weight: 700;
     color: #FFFFFF;
-    border-bottom: none; /* les bordures en haut et en bas sont supprimées pour que le .bouton_rechercher puisse correspondre au visuel de la maquette */
+    border-bottom: none; /* top and bottom borders are removed so that .button-search shape matches with the visual of the model */
     border-top: none;
 }
 
@@ -149,45 +148,45 @@ button:hover {
 }
 
 button .button-mobile {
-    display: none; /* ce bouton de recherche ne sera visible qu'en version mobile */
+    display: none; /* this button is visible only in mobile version */
 }
 
-/* FILTRES CSS */
+/* CSS FILTERS */
 
-.flex-filters {
+.flex-filters { /* the entire filters is aligned horizontally */
     display: flex;
     flex-direction: row;
     padding: 45px 0px 0px 12px;
 }
 
-.flex-border-filters {
+.flex-border-filters { /* the strings and the icons are aligned horizontally in .flex-border-filters */
     display: flex;
     flex-direction: row;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    margin-top: -15px; /* la marge externe du haut au dessus du border top des .flex_border_filtres est maintenant de 30px,(45px-15px=30px) pour correspondre au visuel de la maquette */
-    margin-left: 40px; /* la marge entre chaque .flex-border-filters sera de 40px */
+    margin-top: -15px; /* the external margin above border top of .flex_border_filtres is now to 30px,(45px-15px=30px) to correspond to the visual of the model */
+    margin-left: 40px; /* the external margin at left between .flex-border-filters is fixed to 40px */
 }
 
 .icons-in-filters {         
     font-size: 1.375em;
-    padding: 12px 0 12px 18px;  /* les marges internes sont appliquées autour de l'icône à l'intérieur du .flex-border-filters */
+    padding: 12px 0 12px 18px;  /* the internals margins are applied around the icon inside the .flex-border-filters */
 }
 
 .filter-category-space {    
-    padding: 12px 18px 12px 10px; /* les marges internes sont appliquées autour des catégories string à l'intérieur des .flex-border-filters */
+    padding: 12px 18px 12px 10px; /* the internals margins are applied around string categories inside the .flex-border-filters */
 }
 
 .filter-category-family-space {
-    padding-left: 14px; /* la marge interne à gauche du string "Familial" est augmenté à 14px pour correspondre au visuel de la maquette */
+    padding-left: 14px; /* the internal left margin of the string "Familial" is fixed to 14px to correspond to the visual of the model */
 }
 
 .icon-person-in-filter {
-    padding-left: 22px; /* la marge interne à gauche de l'icône "fa-solid fa-person" est augmenté à 22px pour correspondre au visuel de la maquette */
+    padding-left: 22px; /* the internal left margin of the icon "fa-solid fa-person" is fixed to 22px to correspond to the visual of the model */
 }
 
 .flex-filters .filter-string-space {      
-    margin-right: -10px; /*la marge externe se fait entre le string "Filtres" et le border-radius situé à gauche de l'icône "fa-solid fa-money-bill-wave" */
+    margin-right: -10px; /* the external right margin is applied between the string "Filtres" and the border-radius on the left of the icon "fa-solid fa-money-bill-wave" */
 }
 
 .flex-border-filters:hover {
@@ -206,26 +205,26 @@ button .button-mobile {
 .circle-info {   
     border: 1px solid #D9D9D9; 
     border-radius: 25px;
-    width: 24px;            /*création du cercle qui entoure l'icône "fa-solid fa-info" */
+    width: 24px;            /* creation of the circle around the icon "fa-solid fa-info" */
     height: 24px;
-    margin-right: 10px; /* une marge externe entre l'icône "fa-solid fa-info" et le paragraphe est fixé à 10px pour correspondre au visuel de la maquette */
-    margin-top: -5px; /* le cercle contenant l'icône "fa-solid fa-info" sera placé à 35px (40px-5px) en dessous des .flex_border_filtres */
-    font-size: 0.625em;   /* la taille de l'icône "fa-solid fa-info" est fixé à 10px */
-    padding: 6px 9px;   /* mise en place des marges internes autour de l'icône "fa-solid fa-info" dans le cercle */
+    margin-right: 10px; /* the external margin between the icon "fa-solid fa-info" and the paragraphe is fixed to 10px to correspond to the visual of the model */
+    margin-top: -5px; /* the circle with icon "fa-solid fa-info" will be placed to 35px (40px-5px) below the .flex-border-filters */
+    font-size: 0.625em;   /* the size of the icon "fa-solid fa-info" is fixed to 10px */
+    padding: 6px 9px;   /* the internals margins are applied around the icon "fa-solid fa-info" in the circle */
 }
 
-        /* CSS Section offers popular */
+/* CSS SECTION OFFERS/POPULAR */
 
 /* CSS offers popular general */
 
-.offer-popular-section {  /* les deux parties de la section .offer-popular-section sont placées à côté pour correspondre à la maquette */
+.offer-popular-section {  /* both parts of the . offer-popular-section are placed next to, to correspond to the visual of the model */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 40px 0 60px 0;
 }
 
-.offers, .popular {   /* la hauteur et le fond de .offers et .popular sont définis */
+.offers, .popular {   /* the common properties of .offers and .popular are defined */
     background-color: #F2F2F2;
     height: 625px;
     border-radius: 20px;
@@ -240,11 +239,11 @@ button .button-mobile {
     width: 31.5%;
 }
 
-.no-space-beetween-stars {
+.no-space-between-stars {
     white-space: nowrap;
 }
 
-/* mise en place des propriétés générales de .card */
+/* properties generals for cards */
 
 .card { 
     box-shadow: 0 4px 8px 0 #D9D9D9;
@@ -271,16 +270,16 @@ button .button-mobile {
     font-size: 0.8em; 
 }
 
-/* CSS offers details */
+/* detailed css of the part of the offers */
 
-.first-line-offers-card {
+.first-line-offers-card { /* with the .first-line-offers-card, cards in .offers are aligned horizontally */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 23px 0 30px 0;
 }
 
-.second-line-offers-card {
+.second-line-offers-card { /* with the .second-line-offers-card, cards in .offers are aligned horizontally */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -298,9 +297,9 @@ button .button-mobile {
     border-radius: 20px 20px 0 0;
 }
 
-/* CSS popular details */
+/* detailed css of the part of popular */
 
-.title-popular-with-icon { 
+.title-popular-with-icon { /* the .title-popular-with-icon is aligned horizontally */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -311,12 +310,12 @@ button .button-mobile {
     margin-top: 5px;
 }
 
-.flex-popular-card {
+.flex-popular-card { /* the contents of popular cards are aligned horizontally */
     display: flex;
     flex-direction: row;
 }
 
-.flex-with-string-and-icon-stars { /* ce conteneur contient le string et les stars des card de .popular */
+.flex-with-string-and-icon-stars { /* this container contains the string and the icons stars of the popular cards, the space between the string and the stars is fixed, and the string with the stars icons are placed on a column */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -341,13 +340,14 @@ button .button-mobile {
 }                              
 
 .space-string-in-card-popular i { 
-    padding-bottom: 10px;
+    padding-bottom: 10px; /* the internal margin at the bottom of stars icons is fixed to correspond to the visual of the model */
 }
             
 /* CSS activity */
 
-.flex-activity-section { 
+.flex-activity-section { /* the cards in activity section are aligned horizontally */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px 0 60px 0;
 }
@@ -370,7 +370,7 @@ button .button-mobile {
 
 /* CSS FOOTER */
 
-footer {
+footer { /* the divs in the footer are aligned horizontally */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -440,7 +440,7 @@ footer p {
     margin-left: 25px;
  } 
  .flex-filters {
-    flex-wrap: wrap;  /* le filtre .space-with-animal-filter-responsive-tablet passera à la ligne lorsque la largeur de l'écran sera trop petite */
+    flex-wrap: wrap;  /* animal filter will switch to line when screen width is too small */
  }
  .flex-filters > div { 
     margin-bottom: 30px;
@@ -455,15 +455,16 @@ footer p {
  } 
         /* offers and popular section */
 
- .offer-popular-section {      
-    flex-direction: column;  /* .popular se replace en colonne en dessous de .offers*/
+ .offer-popular-section {
+    display: flex;     
+    flex-direction: column;  /* the part .popular is now in a column at below the part .offers */
     justify-content: space-between;
     padding: 40px 0 70px 0;
  }    
  .offers, .popular { 
     padding: 40px 40px 45px;
  }
-        /* offers details */
+        /* details offers */
  
  .offers { 
     width: auto;
@@ -474,10 +475,10 @@ footer p {
  .offers .card h3, .offers .card p, .offers .card .first-star-position {  
     padding-left: 10px; 
  } 
-        /* popular details */
+        /* details pouplar */
 
  .flex-popular-responsive-tablet {       
-    display: flex; /* les .card dans .popular ne sont plus sur une colonne mais sur une rangée */
+    display: flex; /* the cards in the part .popular are now aligned horizontally */
     flex-direction: row;
     justify-content: space-between;
  }
@@ -505,7 +506,7 @@ footer p {
     padding-bottom: 5px;
  }
  .popular .card p {  
-    font-size: 0.813em; /* le <p> des .card de .popular passe à 11px de font-size */
+    font-size: 0.813em; /* the <p> of .card of the part .popular is fixed to 11px */
     line-height: 16px;
     font-weight: 400;
     line-height: 15px;
@@ -542,8 +543,7 @@ footer p {
     padding-top: 5px;
     padding-left: 15px;
  }
-
-        /* Footer */
+      /* Footer */
     
  footer {
     padding-right: 10px;
@@ -560,30 +560,30 @@ footer p {
         /* Header */
 
  header {
-    display: flex;
+    display: flex; /* the content of the header is now in a column */
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     padding-top: 25px;
  }
  .logo { 
     margin-top:0;
  }
  nav { 
-    display: flex;
+    display: flex; /* the content of the nav with the links is aligned horizontally */
     flex-direction: row;
     width: 100%;
  }
- nav .link-offer-active-in-responsive-mobile[data-active=true] {
-    border-bottom-color: #0065FC;
-    color: #0065FC;
-    font-weight: 500;
-}
  nav a { 
     padding: 50px 10px 25px 10px;
     text-align: center;
     width: 50%;
     border-top: none;
     border-bottom: 3px solid #F2F2F2;
+ }
+ nav .link-offer-active-in-responsive-mobile[data-active=true] {
+    border-bottom-color: #0065FC;
+    color: #0065FC;
+    font-weight: 500;
  }
  nav a:hover { 
     border-bottom: #0065FC solid 3px;
@@ -595,7 +595,7 @@ footer p {
     padding: 0 20px 0 20px;
  }
  .position-first-h1 { 
-    margin-top: 30px; /* les marges externes s'appliqueront au premier h1 */
+    margin-top: 30px; 
  }
  .position-first-p {
     margin-top: 15px;
@@ -616,7 +616,7 @@ footer p {
  button .button-mobile {
     display: inline-block;
     padding: 16px;
-    font-size: 17px;
+    font-size: 17px; /* this font-size is applied at the icon fa-solid fa-magnifying-glass */
     color: #FFFFFF;
  }
         /* Filters */  
@@ -636,10 +636,10 @@ footer p {
     min-width: 47.7%;
  }
  .flex-border-filters p {
-    font-size: 0.688em; /* la font-size passe à 11px pour les strings des .flex-border-filters */
+    font-size: 0.688em; /* the font-size is fixed to 11px for .flex-border-filters strings */
  }
  .icons-in-filters {
-    font-size: 1.313em; /* la font-size passe à 21px pour les icônes des .flex-border-filters */
+    font-size: 1.313em; /* the font-size is fixed to 21px for .flex-border-filters icons */
     padding: 14px 0 14px 13px;
  }
  .filter-category-space {
@@ -657,7 +657,7 @@ footer p {
     padding-top: 43px;
  }
  .circle-info {
-    font-size: 0.750em;
+    font-size: 0.750em; /* the font-size is fixed to 12px for icon in the circle */
     padding: 4px 9px 6px;
     margin-top: -3px;
  }
@@ -665,12 +665,12 @@ footer p {
        
  .offer-popular-section {  
     display: flex;    
-    flex-direction: column-reverse;  /* .popular se replace en colonne en dessous de .offers */
+    flex-direction: column-reverse;  /* the part .popular is now in a column but above the part .offers */ 
     padding-top: 25px;
     padding-bottom: 105px;
  }  
  .popular, .offers {
-    border-radius: 0; /* les bords arrondis des .popular et .offers disparraissent */
+    border-radius: 0; /* border-radius of the part .popular and of the part .offers are removed */
  } 
  .popular .card, .offers .card {
     width: 100%;
@@ -679,7 +679,7 @@ footer p {
  .offers .card h3, .offers .card p, .offers .card .first-star-position, .popular .card h3, .popular .card p, .popular .card .first-star-position {
     padding-left: 13px;
  }
-        /* Popular details */
+        /* details popular */
 
  .popular {
     padding: 30px 20px 45px 20px;
@@ -687,7 +687,7 @@ footer p {
     margin-top: 0;
  }
  .flex-popular-responsive-tablet {       
-    display: flex; /* les .card dans .popular ne sont plus sur une rangée mais sur une colonne */
+    display: flex; /* the cards in the part .popular are no longer on a row but on a column */
     flex-direction: column;
  }
  .popular .card {
@@ -710,31 +710,32 @@ footer p {
  }
  .popular .card p {
     font-weight: 400;
-    font-size: 0.875em; /* le <p> des .card de .popular repasse à 14px de font-size */
+    font-size: 0.875em; /* the font-size of <p> of cards in the part .popular is now fixed to 14px */
     line-height: 16px;
  }
-        /* Offers details */
+        /* details offers */
    
  .offers {
     padding: 25px 20px 0 20px;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* the background-color of the part .offers is now white */
     height: 1315px;
  }
- .offers .space-title-offer-in-responsive-mobile {
-    padding-bottom: 10px;
- }
- .first-line-offers-card, .second-line-offers-card { /* les deux rangées de .offers sont maintenant en colonnes */
+ .first-line-offers-card, .second-line-offers-card { /* the two rows of the part .offers are now in columns */
     display: flex;
     flex-direction: column;
     padding: 0;
  }
- .link-none-in-responsive-mobile {
+ .offers .space-title-offer-in-responsive-mobile {
+    padding-bottom: 10px;
+ }
+ .link-none-in-responsive-mobile { /* this link is no longer visible in mobile version */
+
     display: none;
  }
         /* Activity section */
     
  .flex-activity-section {
-    display: flex; /* les .card de .flex-activity-section se mettent en colonne */
+    display: flex; /* the cards in the part activity section are now in a column */
     flex-direction: column;
     padding: 0 20px 0 20px;
  }
@@ -760,7 +761,7 @@ footer p {
         /* Footer */
 
  footer {
-    display: flex;
+    display: flex; /* the divs in the footer are now in a column */
     flex-direction: column;
     margin-top: 55px;
     padding: 0 20px 50px 30px;
