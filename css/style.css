@@ -46,7 +46,7 @@ body {
     line-height: 19px;
 }
 
-.typography-style-with-14   {
+.typography-style-with-14 {
     font-weight: 400;
     font-size: 0.875em;
     line-height: 16px;
@@ -102,7 +102,7 @@ nav a:hover {
 
 /* CSS FORMULARY */
 
-.formulary     { 
+.formulary { 
     display: flex; /* the content of the form is aligned horizontally */
     flex-direction: row;
     padding: 20px 0 0 5px;
@@ -729,7 +729,6 @@ footer p {
     padding-bottom: 10px;
  }
  .link-none-in-responsive-mobile { /* this link is no longer visible in mobile version */
-
     display: none;
  }
         /* Activity section */
